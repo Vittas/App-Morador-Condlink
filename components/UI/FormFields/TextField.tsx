@@ -19,9 +19,9 @@ export function TextField<T extends FieldValues>({
                 name={name}
                 render={({ field: { onChange, value }, fieldState: {error} }) => (
 
-                    <View>
+                    <View className='gap-2 w-full'>
                         <TextInput
-                            className={`border w-full pl-3 ${error ? 'border-red-500' : ' border-gray-300'}`}
+                            className={`border min-w-full max-w-full py-4 px-4 rounded-md  ${error ? 'border-red-500' : ' border-gray-300'}`}
                             placeholder={placeholder}
                             onChangeText={onChange}
                             value={value}
